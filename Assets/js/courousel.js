@@ -30,7 +30,7 @@ console.log(indicators);
 
 
  sliders.forEach((slider,i)=>{
-   slider.style.left = `${i*100}%`;
+    slider.style.left = `${i*100}%`;
  })
 const hi = (counter) => {
  sliders.forEach((slider,i)=>{
@@ -91,7 +91,7 @@ const updateIndicatorStyle = (i) => {
       if (i == 0) {direction = true; i++;};
       
     }
-    }, 2000);  
+    }, 4000);  
 
    }
 

@@ -59,12 +59,14 @@
   margin-right: 25px;
  }  
  .logo {
-  background: linear-gradient(45deg,var(--primary2), var(--primary1));
+  /* background: linear-gradient(45deg,var(--primary2), var(--primary1)); */
  color: transparent;
- background-clip: text;
- font-weight: 900;
+ /* background-clip: text; */
+ font-weight: 400;
  font-size: 24px;
- text-shadow: 0px 0px 1px var(--primary2);
+ color: #F98866;
+ letter-spacing: 1px;
+ text-shadow: 0px 0px 0.5px var(--primary2);
  font-style: italic;
  text-transform: uppercase;
  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

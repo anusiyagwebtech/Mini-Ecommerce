@@ -71,7 +71,8 @@
     border-radius: 10px;
     
     background: #fff;
-  background:var(--primary1);
+  background: #fff;
+  box-shadow: 2px 1px 4px rgba(185, 177, 174, 0.4);
 
  }
 .search-items .searchitem {
@@ -81,7 +82,7 @@
     align-items: center;
     padding: 10px;
     border-bottom: 10px solid;
-    border-image:  linear-gradient(275deg,var(--primary2), var(--primary1)) 1;
+    border-image:  linear-gradient(275deg,rgb(56, 55, 55,0.4),rgb(158, 155, 155)) 1;
     display: none;
     transition: 0.4s;
     
