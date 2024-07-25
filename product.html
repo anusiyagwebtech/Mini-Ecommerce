@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Assets/css/header.css">
+  <link rel="stylesheet" href="../Assets/css/singleProduct.css">
+  <link rel="stylesheet" href="../Assets/css/subheader.css">
+  <link rel="stylesheet" href="../Assets/css/style.css">
+  <script src="../Assets/js/filter.js" defer></script>
+  <script src="Assets/js/product.js" defer></script>
+  <script src="Assets/js/cartnowlength.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+  
+</head>
+<body>
+  <div class="loader">
+    <div class="round"></div>
+  </div>
+  <header>
+    <nav>
+      <div class="logo">Just Buy</div>
+      <div class="main-menu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="shop.html" >Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="journal.html" >Journal</a></li>
+        </ul>
+      </div>
+      <div class="fa-solid fa-bars" onclick="openside()"></div>
+      <div id="sidebar-left" class="sidebar-left">
+        <div class="mobileCose">
+          <p><strong>Go to</strong></p>
+          <i class="fa-solid fa-close" onclick="Closeside()"></i>
+        </div>
+       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="journal.html">Journal</a></li>
+
+       </ul>   
+       <h4>Shop By Catagory</h4>
+       <ul>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="dress.html">Clothes</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+       <li><a href="cart.html">Cart <i class="fa-solid fa-cart-shopping" style="color: #F98866;"></i>(<span class="round round-text">1</span>)</a></li>
+       <li><a href="favour.html">Favourites</a></li>
+
+       </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="header">
+    <nav>
+      <div class="menubar menubar-dropdown-parent">
+        <i class="fa-solid fa-bars"></i>
+        <div>Shop by Category</div>
+        <div class="menubar-dropdown">
+          <ul>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="furniture.html">Furniture</a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="dress.html">Clothes</a></li>
+           
+          </ul>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search your product here..."  id="search-bar-input"/>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-items">
+         
+        </div>
+      </div>
+
+      <div class="lolipop"></div>
+      
+    </nav>
+   
+  </div>
+  <!-- <div class="strip" style="background: #fff;width: 100%;height: 40px;"></div> -->
+ <section class="Product-section">
+    
+     <!-- <div class="product-lists">
+      <div class="bread-crump"><a href="#">/Product/Teatable</a> &gt; <a href="#"><b>Product</b></a></div>
+      <h3>Products on sale</h3>
+      <div class="product-item">
+        <img src="../Assets/images/carousel/product2.jpg" alt="">
+        <div class="content">
+          <p>Cap For Boys</p>
+          <p><strong>$35.00</strong></p>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="../Assets/images/carousel/product2.jpg" alt="">
+        <div class="content">
+          <p>Cap For Boys</p>
+          <p><strong>$35.00</strong></p>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="../Assets/images/carousel/product2.jpg" alt="">
+        <div class="content">
+          <p>Cap For Boys</p>
+          <p><strong>$35.00</strong></p>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="../Assets/images/carousel/product2.jpg" alt="">
+        <div class="content">
+          <p>Cap For Boys</p>
+          <p><strong>$35.00</strong></p>
+        </div>
+      </div>
+     </div> -->
+     <div class="product-img"><img src="../Assets/images/carousel/product2.jpg" alt="" id="Image"></div>
+     <div class="product-details">
+        <h3 id="title">Camera</h3>
+        <h4 id="price">$ 180.00</h4>
+         <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam esse accusamus doloribus placeat temporibus magni.</p>
+       
+        
+         <button id="product-cart-btn"><a href="#">Add to Cart</a></button>
+         <p ><b>Categories: </b><span id="keypoints">Anywhere,High Quality</span></p>
+     </div>
+  </section>
+  <a href="favour.html">
+    <div class="profile-user">
+      <i class="fa-solid fa-heart" style="color: red;filter: drop-shadow(1px 3px 5px rgba(0,0,0,0.6));"></i>
+      <span>Favourite</span>
+    </div>
+  </a>
+  <a href="cart.html">
+    <div class="cartbuynow">
+      <div>
+      <i class="fa-solid fa-cart-shopping"></i><span class="round round-text">1</span> </div>
+      <span>Buy Now</span>
+    </div>
+  </a>
+  <a href="#">
+    <div class="bottomtotop">
+     
+      <i class="fa-solid fa-angle-up"></i>
+      
+    </div>
+  </a>
+</body>
+</html>

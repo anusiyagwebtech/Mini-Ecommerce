@@ -1,0 +1,86 @@
+const indicators = document.querySelectorAll('.indicators div');
+const slidesContainer = document.querySelector('.slides'); // Assuming there's a container for slides
+const slides = document.querySelectorAll('.slider');
+let counter = 0; // Start from the first slide
+let direction = 1; // 1 for forward, -1 for backward
+let timeout;
+
+// Initialize slider position and indicators
+slides.forEach((slide, index) => {
+  slide.style.left = `${index * 100}%`;
+});
+
+const updateIndicators = () => {
+  indicators.forEach((indicator, index) => {
+    indicator.style.border = (index === counter) ? "3px solid blue" : "none";
+  });
+};
+
+const slideImage = (withTransition = true) => {
+  slides.forEach((slide) => {
+    slide.style.transition = withTransition ? 'transform 0.5s ease-in-out' : 'none';
+    slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
+  updateIndicators();
+};
+
+const prev = () => {
+  clearInterval(timeout);
+  direction = -1;
+  counter--;
+  if (counter < 0) {
+    counter = slides.length - 1;
+  }
+  slideImage();
+  resetTimer();
+};
+
+const next = () => {
+  clearInterval(timeout);
+  direction = 1;
+  counter++;
+  if (counter >= slides.length) {
+    counter = 0;
+  }
+  slideImage();
+  resetTimer();
+};
+
+// Reset timer function
+const resetTimer = () => {
+  timeout = setInterval(autoSlide, 3000);
+};
+
+// Automatic slide function
+const autoSlide = () => {
+  if (direction === 1) {
+    counter++;
+    if (counter === slides.length) {
+      direction = -1;
+      counter = slides.length - 2; // Move to the second last slide
+    }
+  } else {
+    counter--;
+    if (counter < 0) {
+      direction = 1;
+      counter = 1; // Move to the second slide
+    }
+  }
+  slideImage();
+};
+
+// Add click events to indicators
+indicators.forEach((indicator, index) => {
+  indicator.addEventListener('click', () => {
+    clearInterval(timeout);
+    counter = index;
+    direction = 1; // Reset direction to forward on manual click
+    slideImage();
+    resetTimer();
+  });
+});
+
+// Initial call to start the slider
+timeout = setInterval(autoSlide, 3000);
+slideImage(false); // Initialize without transition
+updateIndicators(); // Initialize indicators

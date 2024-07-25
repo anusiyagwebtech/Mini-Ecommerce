@@ -1,0 +1,221 @@
+:root {
+    --primary1: #FFF2D7;
+    --primary2: #F98866;
+    --secondary1: #131010;
+    --secondary2:#575656;
+
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  header {
+    position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 3;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+  }
+ header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw;
+ }
+ header nav .fa-solid.fa-bars {
+  display: none;
+ }
+ 
+ .main-menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ }
+ .main-menu  ul li {
+  list-style: none;
+  padding: 0px 15px;
+ }
+ .main-menu  ul li a {
+  text-decoration: none;
+  color: rgb(73, 72, 72);
+  transition: 0.3s;
+
+ }
+ .main-menu  ul li a:hover {
+  color: var(--primary2);
+ }
+ .main-menu  ul li:not(:first-child)::before {
+  content: '|';
+  display: inline-block;
+  margin-right: 25px;
+ }  
+ .logo {
+  background: linear-gradient(45deg,var(--primary2), var(--primary1));
+ color: transparent;
+ background-clip: text;
+ font-weight: 900;
+ font-size: 24px;
+ text-shadow: 0px 0px 1px var(--primary2);
+ font-style: italic;
+ text-transform: uppercase;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+ }
+ .profile-user, .cartbuynow {
+    width: 80px;
+    background: #fff;
+    /* border: 1px solid rgb(182, 181, 181); */
+    box-shadow: 2px 3px 5px rgba(2,2,2,0.2), -3px -2px 3px rgba(255,255,255,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    gap: 4px;
+    position: fixed;
+    right: -3px;
+    color: rgb(59, 50, 50);
+    z-index: 2;
+    border-radius: 4px;
+     
+ }
+ .profile-user:hover, .cartbuynow:hover {
+  box-shadow: 2px 3px 23px rgba(0,0,0,0.1);
+  cursor: pointer;
+
+ } 
+ 
+ .cartbuynow    {
+  top: 250px;
+ }
+ .profile-user{
+  top: 315px;
+ }
+ 
+ .profile-user i,.cartbuynow i {
+  display: inline-block;
+
+ }
+ .cartbuynow div {
+  position: relative;
+  display: inline-block;
+ }
+ .cartbuynow span.round {
+  /* display: inline-block; */
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  /* border: 1px solid rgb(37, 36, 36); */
+  font-style: normal;
+  line-height: 12px;
+  text-align: center;
+  top: -10px;
+  left: -10px;
+  background: red;
+  color: #f4f5f7;
+  font-weight: 900;
+  border-radius: 50%;
+  padding: 1px;
+  font-size: 12px;
+  filter: drop-shadow(1px 3px 5px rgba(0,0,0,0.6));
+ }
+ .bottomtotop {
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid grey; */
+  line-height: 50px;
+  box-shadow: 1px 4px 5px rgba(0,0,0,0.6);
+  border-radius: 50%;
+  text-align: center;
+  background: rgb(209, 47, 47);
+  color: #f4f5f7;
+  position: absolute;
+  bottom: 20px;
+  position: fixed;
+  right: 20px;
+ }
+ .profile-user:hover i,.cartbuynow:hover i, .cartbuynow:hover span.round  {
+  animation: moved 0.5s linear 1;
+ }
+@keyframes moved {
+  0% {
+      transform: translateX(0%);
+  }
+ 50% {
+  transform: translateX(45px);
+ }
+ 75% {
+  transform: translateX(-45px);
+
+ }
+ 100% {
+  
+  transform: translateX(0px);
+
+ }
+}
+/* body{
+  scroll-behavior: smooth;
+} */
+
+@media (max-width: 799px) {
+ .main-menu ul, .lolipop {
+  display: none;
+ }
+ .header nav {
+  justify-content: center !important;
+  align-items: center;
+ }
+ header nav .fa-solid.fa-bars {
+  display: block;
+  padding-right: 30px;
+  align-self: center;
+ }
+
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+  background: rgba(145, 134, 134, 0.4);
+}
+.loader, .loaderr {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader .round,.loaderr .round  {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #F98866;
+  border-top: 3px solid #ffff;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

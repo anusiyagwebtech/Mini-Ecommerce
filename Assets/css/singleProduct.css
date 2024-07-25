@@ -1,0 +1,104 @@
+:root {
+    --primary1o: rgb(255, 242, 215);
+    --primary2o: rgb(249, 136, 102,0.4);
+}
+.Product-section {
+    background: rgb(249, 136, 102,0.1);
+    /* height: 9vh; */
+    background: linear-gradient( 45deg, rgba(241, 241, 241, 0.1), rgb(243, 243, 242));
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns:  50% 40%;
+    /* padding: 10px 4%; */
+    margin-top: 77px;
+    padding: 10px;
+    
+}
+.Product-section .product-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* background: rgb(173, 168, 168); */
+  padding: 10px;
+  /* border: 2px solid rgb(121, 116, 116); */
+  
+  
+}
+.Product-section .product-img img {
+  object-fit: contain;
+  width: 70%;
+  height: 80vh;
+  box-shadow: 3px 5px 7px rgba(241, 241, 241, 0.1);
+}
+.product-lists {
+    padding: 20px 0px;
+  background: rgb(128, 128, 128,0.1);
+  margin-top: 0px;
+  height: 80%;
+  overflow-y: scroll;
+}
+.product-lists h3 {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 24px;
+    color: rgb(48, 43, 43);
+}
+.product-lists .product-item{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   border-bottom: 1px solid  rgb(255, 242, 215);
+   padding: 20px;
+
+   
+}
+.product-lists .bread-crump {
+    margin-top: 15px;
+    text-align: center;
+}
+.product-lists .bread-crump a{
+  color: rgb(70, 65, 65);
+}
+.product-lists .product-item  img {
+    width: 40%;
+}
+.product-lists .product-item  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s;
+
+}
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px;
+}
+.product-details button {
+    height: 40px;
+    border: 0;
+    outline: 0;
+    background: #000;
+}
+.product-details button a{
+    color: #fff;
+    text-decoration: none;
+}
+.product-details  h3 {
+   font-size: 28px;
+}
+
+@media (max-width: 799px) {
+.Product-section {
+    margin-top: 50px;
+    grid-template-columns: 100%;
+}
+.product-details {
+    padding: 5%;
+}
+}

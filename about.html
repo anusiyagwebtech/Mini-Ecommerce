@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Assets/css/header.css">
+  <link rel="stylesheet" href="Assets/css/subheader.css">
+  <link rel="stylesheet" href="Assets/css/carousel.css">
+  <link rel="stylesheet" href="Assets/css/style.css">
+<link rel="stylesheet" href="Assets/css/singleSlider.css">
+<link rel="stylesheet" href="Assets/css/productCard.css">
+  <script src="Assets/js/courousel.js" defer></script>
+  <script src="Assets/js/filter.js" defer></script>
+  <script src="Assets/js/singleslider.js" defer></script>
+  <script src="Assets/js/subscribe.js" defer></script>
+  <script src="Assets/js/accesseriesDetails.js" defer></script>
+  <script src="Assets/js/cartnowlength.js" defer></script>
+  <script src="Assets/js/ViewDetails.js" defer></script>
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+  
+</head>
+<body>
+  <div class="loader">
+    <div class="round"></div>
+  </div>
+  <header>
+    <nav>
+      <div class="logo">Just Buy</div>
+      <div class="main-menu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="shop.html" >Shop</a></li>
+          <li><a href="about.html"  class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="journal.html">Journal</a></li>
+        </ul>
+      </div>
+      <div class="fa-solid fa-bars" onclick="openside()"></div>
+      <div id="sidebar-left" class="sidebar-left">
+        <div class="mobileCose">
+          <p><strong>Go to</strong></p>
+          <i class="fa-solid fa-close" onclick="Closeside()"></i>
+        </div>
+       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="journal.html">Journal</a></li>
+
+       </ul>   
+       <h4>Shop By Catagory</h4>
+       <ul>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="dress.html">Clothes</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+       <li><a href="cart.html">Cart <i class="fa-solid fa-cart-shopping" style="color: #F98866;"></i>(<span class="round round-text">1</span>)</a></li>
+       <li><a href="favour.html">Favourites</a></li>
+
+       </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="header">
+    <nav>
+      <div class="menubar menubar-dropdown-parent">
+        <i class="fa-solid fa-bars"></i>
+        <div>Shop by Category</div>
+        <div class="menubar-dropdown">
+          <ul>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="furniture.html">Furniture</a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="dress.html">Clothes</a></li>
+           
+          </ul>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search your product here..."  id="search-bar-input"/>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-items">
+         
+        </div>
+      </div>
+
+      <div class="lolipop"></div>
+      
+    </nav>
+   
+  </div>
+  
+   <section style="min-height: 50vh;margin-top: 90px;">
+     <div class="banner-content">
+       <h1>About</h1>
+       <p class="tag"><a href="contact.html">Contact</a> &gt; <a href="about.html">About</a></p>
+       <p><strong>Just Buy </strong> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione recusandae nisi dolor eum molestias, delectus accusamus atque id vero, praesentium voluptatem officiis sint voluptates, iste dolore temporibus doloribus totam.</span></p>
+       <button><a href="shop.html">Continue Shopping</a></button>
+     </div>
+   </section>
+
+ <footer>
+  <div>
+    <h4>More About Justbuy Shop</h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam temporibus ea?</p>
+    <div class="icons">
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </div>
+  <div>
+    <h4>Shops</h4>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="shop.html">Shop</a>
+
+      </li>
+      <li>
+        <a href="about.html">About</a>
+
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+
+      </li>
+      <li>
+        <a href="journal.html">Journal</a>
+
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h4>Your Account</h4>
+    <ul>
+      <li>
+        <a href="cart.html">Order</a>
+      </li>
+      <li>
+        <a href="shop.html">All Products</a>
+
+      </li>
+      <li>
+        <a href="electronics.html">Electronics</a>
+
+      </li>
+      <li>
+        <a href="furniture.html">Furniture</a>
+
+      </li>
+      <li>
+        <a href="dress.html">Clothes</a>
+
+      </li>
+      <li>
+        <a href="furniture.html">Furniture</a>
+
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h4>Subscrib to our Newsletter</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <div class="inputbox" id="subscribeInputBox">
+      <input type="text" placeholder="Enter Your Email..." id="subscribeEmail">
+      <button onclick="subscribe(this)" id="subscribebtn">Subscribe</button>
+       <p id="subscribeError"></p>
+    </div>
+    
+    <div class="imgiconscard">
+      <img src="Assets/images/carousel/visa.png" alt="">
+      <img src="Assets/images/carousel/mastercard.png" alt="">
+      <img src="Assets/images/carousel/paytm.png" alt="">
+      <img src="Assets/images/carousel/paypal.png" alt="">
+
+
+    </div>
+  </div>
+   
+ </footer>
+ <div class="copyright">
+  <p>Copyright&copy;2024</p>
+ </div>
+
+ <a href="favour.html">
+  <div class="profile-user">
+    <i class="fa-solid fa-heart" style="color: red;filter: drop-shadow(1px 3px 5px rgba(0,0,0,0.6));"></i>
+    <span>Favourite</span>
+  </div>
+</a>
+<a href="cart.html">
+  <div class="cartbuynow">
+    <div>
+    <i class="fa-solid fa-cart-shopping"></i><span class="round round-text">1</span> </div>
+    <span>Buy Now</span>
+  </div>
+</a>
+<a href="#">
+  <div class="bottomtotop">
+   
+    <i class="fa-solid fa-angle-up"></i>
+    
+  </div>
+</a>
+   
+</body>
+</html>

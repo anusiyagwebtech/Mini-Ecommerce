@@ -1,0 +1,125 @@
+.products-header,.products-details {
+    display: grid;
+    grid-template-columns: repeat(4,calc(100%/4));
+   
+}
+.products-header {
+    background: linear-gradient(var(--primary1o), var(--primary2o));
+    background: #f0eeee;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.products-header div {
+    /* text-align: center; */
+}
+.products-detail-list {
+    min-height: 150px;
+}
+.products-details  {
+    height: 100%;
+    margin-bottom: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+}
+.products-details  .fa-xmark {
+    cursor: pointer;
+
+}
+.products-details img {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+}
+.product-cart-section {
+    margin-top: 160px;
+    padding: 4%;
+
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+
+}
+
+.products-details .btns {
+    display: flex;
+    align-items: center;
+}
+.products-details .btns button{
+    width: 26px;
+    height: 26px;
+padding: 3px;
+background: #070809;
+color: #f0eeee;
+box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.1);
+
+}
+.products-details .btns button:not(.count-btn) {
+    cursor: pointer;
+}
+.products-details .btns button:hover:not(.count-btn) {
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.3);
+}
+.btns button.count-btn {
+   width: 40px;
+    background: #f5eeee;
+    display: block;
+    color: #070809;
+    border: 0;
+
+ }
+ .productprice {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+ }
+
+ .cart-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 65px;
+    align-items: center;
+  }
+
+  .cart-footer button {
+    background: rgb(250, 26, 26);
+    color: #f6f6f7;
+    padding:  10px 20px;
+    border: 0;
+    outline: 0;
+    box-shadow: 1px 3px 55px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .cart-footer button:active,   .cart-footer button:hover {
+    padding: 12px 22px;
+    box-shadow: 1px 3px 55px rgba(0, 0, 0, 0.7);
+    
+  }
+ body {
+    overflow-x: hidden;
+ }
+  @media (max-width: 799px) {
+    body {
+        overflow-x: hidden;
+     }
+    .product-cart-section {
+        width: 90vw !important; 
+    }
+    .products-header, .products-detail-list{
+        width: 780px !important; 
+      
+        
+    }
+    .product-cart-section {
+        overflow-x: scroll;
+    }
+    .cart-footer {
+        gap: 20px;
+    }
+  }
